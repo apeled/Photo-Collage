@@ -10,7 +10,6 @@
 - [Results](#results)
 - [Achievements](#achievements)
 - [Future Work](#future-work)
-- [Contributors](#contributors)
 
 ## Project Overview
 This MATLAB project aims to create a complex and intriguing program that collages a library of photos onto a base image. After learning the MATLAB basics, the goal was to utilize those skills to create a unique and exciting project. 
@@ -20,21 +19,21 @@ This MATLAB project aims to create a complex and intriguing program that collage
 | Project Directories | Brief Description |
 |---|---|
 | [`/src`](./src) | Contains the source code for the project. |
-| [`/images`](./images) | Contains the library of photos and the base image for the photo collage. |
-| `.gitignore` | A file specifying patterns of files/directories to ignore in git operations. |
-| `LICENSE` | This file contains the license under which the project is released. |
+| [`/src/images`](./src/images) | Contains the images used for creating the photo collage and the code pipeline. It is further subdivided into [`/base_images`](./src/images/base_images) and [`/image_library`](./src/images/image_library) |
+| [`/src/Collagifier.m`](./src/Collagifier.m) | This is the main MATLAB script that runs the photo collage creation process. |
 | `README.md` | This file contains detailed information about the project, its architecture, and its usage. |
+
 
 ## Project Objectives
 The main objectives of this project are:
-- To apply the fundamental concepts of MATLAB programming in a practical project.
+- To apply the image manipulation concepts with MATLAB in a practical project.
 - To gain a deeper understanding of image processing techniques.
 - To create an interesting visual piece using a set of images and a base image.
 
 ## Code Pipeline
 
 <p align="center">
-  <img src="images//pipeline.png"><br>
+  <img src="src//images//pipeline.png"><br>
   <em>Fig.0 - Abstract pipeline.</em>
 </p>
 
@@ -54,7 +53,12 @@ The photo collage system was designed to bring together a collection of images i
 To run this application, MATLAB needs to be installed on your computer. After cloning the repository to your local machine and navigating to the project directory, you can run the main script to start the photo collage creation process.
 
 ## Results
-This section will be updated with the results obtained from the project, showcasing the output of the photo collage.
+| Original Image | Result Image |
+|:---:|:---:|
+| <img src="src//images/base_images/orig3.jpg" width="600"> | <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXZtejB3NzlidGhnam43MnNsZnVudGh3OThoNGl2ZTc3dzNvZnhkaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dGkSfVW30mM2bpoxf6/giphy.gif" width="600"> |
+| <img src="src//images/base_images/orig1.jpg" width="600"> | <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZ2NjltMmoxMTFyemc2bHNpbXVhbDExYnR6Ymk3c2p4cXVsY2JtcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/grXu9wfCkt79tXcZPD/giphy.gif" width="600"> |
+| <img src="src//images/base_images/orig2.jpg" width="600"> | <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnZmM2ZpbXRqMml2cmdsejd1cXZneG0wajZzaDF4NHVucjdhaTA0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9rE7OP7MMIbRmOvwvJ/giphy.gif" width="600"> |
+
 
 ## Achievements
 Through this project, we have created a unique way of collaging a set of images onto a base picture, creating an engaging and eye-catching result. This project enhances our understanding of image processing and manipulation using MATLAB.
@@ -64,6 +68,3 @@ While the current version of the application fulfills the specified requirements
 - Addition of a user interface to allow for easy selection of the base image and image library.
 - Optimization of the color matching algorithm for better performance.
 - Exploring different patch sizes to create a variety of effects.
-
-## Contributors
-This project was a part of the 7-week MATLAB course, which provided the fundamental knowledge required to implement such an application. I extend my gratitude to the course instructors and my peers for their invaluable guidance and support.
